@@ -37,7 +37,7 @@ server <- function(input, output, session) {
   output$table <- renderTable({ datafile() })
   
   # HOW DO I UPDATE THE DATAFILE() WHENEVER A NEW FILE IS ADDED?
-  my_chart <- callModule(chart, "my_chart", datafile = datafile())
+  my_chart <- callModule(chart, "my_chart", datafile = datafile)
   output$plot <- renderPlot({ my_chart() })
 
 }

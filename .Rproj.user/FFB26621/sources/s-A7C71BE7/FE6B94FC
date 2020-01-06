@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3778724307",
+    "hash" : "0",
     "id" : "FE6B94FC",
-    "lastKnownWriteTime" : 1578332945,
-    "last_content_update" : 1578332945606,
+    "lastKnownWriteTime" : 1578341570,
+    "last_content_update" : 1578341570338,
     "path" : "~/Desktop/modularize/app.R",
     "project_path" : "app.R",
     "properties" : {
-        "cursorPosition" : "38,64",
+        "cursorPosition" : "20,15",
         "scrollLine" : "9"
     },
     "relative_order" : 3,
