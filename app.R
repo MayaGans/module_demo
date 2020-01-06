@@ -27,7 +27,7 @@ ui <-
       ),
       tabPanel(
         title = "Charts",
-          ChartUI("my_chart")
+          chartUI("my_chart")
       )
       # tabPanel(
       #   title = "Plots"
@@ -37,18 +37,11 @@ ui <-
 
 server <- function(input, output, session) {
   
-  datafile <- callModule(dataUpload, "datafile",
-                         stringsAsFactors = FALSE)
-  
-  #chart <- callModule(chart, "my_chart")
+  datafile <- callModule(dataUpload, "datafile", stringsAsFactors = FALSE)
+  my_chart <- callModule(chart, "my_chart", datafile = datafile())
 
-  output$table <- renderTable({
-    datafile()
-  })
-  
-  #output$plot <- renderPlot({
-  #  p()
-  #})
+  output$table <- renderTable({ datafile() })
+  output$plot <- renderPlot({ my_chart() })
   
   
 }
