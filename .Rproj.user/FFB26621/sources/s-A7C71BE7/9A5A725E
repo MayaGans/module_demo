@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1577980525483.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2898430007",
+    "id" : "9A5A725E",
+    "lastKnownWriteTime" : 1578327033,
+    "last_content_update" : 1578327033240,
+    "path" : "~/Desktop/modularize/global.R",
+    "project_path" : "global.R",
+    "properties" : {
+        "cursorPosition" : "3,25",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

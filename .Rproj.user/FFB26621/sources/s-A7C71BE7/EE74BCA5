@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1577980369170.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "EE74BCA5",
+    "lastKnownWriteTime" : 1578324879,
+    "last_content_update" : 1578324879045,
+    "path" : "~/Desktop/modularize/modules/dataUpload.R",
+    "project_path" : "modules/dataUpload.R",
+    "properties" : {
+        "cursorPosition" : "26,11",
+        "scrollLine" : "1",
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

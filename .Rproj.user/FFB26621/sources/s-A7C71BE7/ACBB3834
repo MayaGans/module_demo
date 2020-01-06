@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1578326583557.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3712441021",
+    "id" : "ACBB3834",
+    "lastKnownWriteTime" : 1578327303,
+    "last_content_update" : 1578327303219,
+    "path" : "~/Desktop/modularize/modules/chartUI.R",
+    "project_path" : "modules/chartUI.R",
+    "properties" : {
+        "cursorPosition" : "13,12",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
