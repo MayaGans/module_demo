@@ -20,7 +20,7 @@ ui <-
     #   )
     # ),
     navbarPage(
-      "IDEA",
+      "2 Modules",
       tabPanel(
         title = "Data",
         sidebarPanel(
