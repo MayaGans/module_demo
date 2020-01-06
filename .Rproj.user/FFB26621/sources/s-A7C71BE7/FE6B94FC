@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "FE6B94FC",
-    "lastKnownWriteTime" : 1578327485,
-    "last_content_update" : 1578327485605,
+    "lastKnownWriteTime" : 1578328621,
+    "last_content_update" : 1578328621713,
     "path" : "~/Desktop/modularize/app.R",
     "project_path" : "app.R",
     "properties" : {
-        "cursorPosition" : "59,13",
-        "scrollLine" : "32"
+        "cursorPosition" : "7,10",
+        "scrollLine" : "0"
     },
     "relative_order" : 3,
     "source_on_save" : false,

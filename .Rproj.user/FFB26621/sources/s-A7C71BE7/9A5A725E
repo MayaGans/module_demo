@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2898430007",
+    "hash" : "0",
     "id" : "9A5A725E",
-    "lastKnownWriteTime" : 1578327033,
-    "last_content_update" : 1578327033240,
+    "lastKnownWriteTime" : 1578328333,
+    "last_content_update" : 1578328333260,
     "path" : "~/Desktop/modularize/global.R",
     "project_path" : "global.R",
     "properties" : {
-        "cursorPosition" : "3,25",
+        "cursorPosition" : "4,1",
         "scrollLine" : "0",
         "tempName" : "Untitled1"
     },

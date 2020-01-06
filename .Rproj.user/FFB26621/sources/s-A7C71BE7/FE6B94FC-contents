@@ -1,4 +1,5 @@
 library(shiny)
+library(ggplot2)
 source("global.R")
 #####################
 # Module UI function
@@ -32,13 +33,12 @@ ui <-
       ),
       tabPanel(
         title = "Charts",
-        sidebarPanel(
+       # sidebarPanel(
           #ChartUI("my_chart")
-        ),
+       # ),
         mainPanel(
-          #plotOutput("plot")
-        )
-      ) #,
+          plotOutput("plot")
+      )) #,
       # tabPanel(
       #   title = "Plots"
       # )
@@ -57,7 +57,7 @@ server <- function(input, output, session) {
   })
   
   output$plot <- renderPlot({
-    my_plot()
+    p()
   })
   
   
