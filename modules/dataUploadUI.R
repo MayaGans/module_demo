@@ -10,18 +10,14 @@ dataUploadUI <- function(id, label = "CSV file") {
   
   # Rather than fluidPage use a taglist
   # If you're just returning a div you can skip the taglist
-  
   tagList(
-    # ns file 
-    # ns heading
-    # ns quote
-    # only needed to be unique WITHIN THIS FUNCTION
+  sidebarPanel(
     fileInput(ns("file"), label),
     checkboxInput(ns("heading"), "Has heading"),
     selectInput(ns("quote"), "Quote", c(
       "None" = "",
       "Double quote" = "\"",
-      "Single quote" = "'"
-    ))
+      "Single quote" = "'"))),
+  mainPanel(tableOutput("table"))
   )
 }

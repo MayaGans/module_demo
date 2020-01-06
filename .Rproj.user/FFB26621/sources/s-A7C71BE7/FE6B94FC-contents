@@ -20,25 +20,15 @@ ui <-
     #   )
     # ),
     navbarPage(
-      "2 Modules",
+      "IDEA",
       tabPanel(
         title = "Data",
-        sidebarPanel(
-          # put our taglist element here which takes on ID and label parameters
           dataUploadUI("datafile", "User data (.csv format)")
-        ),
-        mainPanel(
-          tableOutput("table")
-        )
       ),
       tabPanel(
         title = "Charts",
-       # sidebarPanel(
-          #ChartUI("my_chart")
-       # ),
-        mainPanel(
-          plotOutput("plot")
-      )) #,
+          ChartUI("my_chart")
+      )
       # tabPanel(
       #   title = "Plots"
       # )
@@ -50,15 +40,15 @@ server <- function(input, output, session) {
   datafile <- callModule(dataUpload, "datafile",
                          stringsAsFactors = FALSE)
   
-  chart <- callModule(chart, "my_chart")
+  #chart <- callModule(chart, "my_chart")
 
   output$table <- renderTable({
     datafile()
   })
   
-  output$plot <- renderPlot({
-    p()
-  })
+  #output$plot <- renderPlot({
+  #  p()
+  #})
   
   
 }

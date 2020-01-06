@@ -2,19 +2,17 @@
 # Module UI function
 ######################
 
-# The first argument is the id -- the namespace for the module
+# need to pass dataframe as an input from the dataUpload module 
+# use within the selectInputs
 dataUploadUI <- function(id, label = "chart") {
 
   ns <- NS(id)
   
-  # Rather than fluidPage use a taglist
-  # If you're just returning a div you can skip the taglist
-  
   tagList(
-    # How do we get these choices to be colnames(dataframe)
-    # Where dataframe was the returned value from the dataUpload function
-    
-    # selectInput(ns("XAXIS", "X Axis" choices = colnames(dataframe))),
-    # selectInput(ns("YAXIS", "Y Axis", choices = colnames(dataframe)))
+    sidebarPanel(
+      # selectInput(ns("XAXIS"), "X Axis", choices = colnames(dataframe())),
+      # selectInput(ns("YAXIS"), "Y Axis", choices = colnames(dataframe()))
+    ),
+    mainPanel("plot")
   )
 }
