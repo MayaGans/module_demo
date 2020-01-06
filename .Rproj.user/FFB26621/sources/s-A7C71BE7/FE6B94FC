@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "3778724307",
     "id" : "FE6B94FC",
-    "lastKnownWriteTime" : 1578331038,
-    "last_content_update" : 1578331038291,
+    "lastKnownWriteTime" : 1578332945,
+    "last_content_update" : 1578332945606,
     "path" : "~/Desktop/modularize/app.R",
     "project_path" : "app.R",
     "properties" : {
-        "cursorPosition" : "14,10",
-        "scrollLine" : "14"
+        "cursorPosition" : "38,64",
+        "scrollLine" : "9"
     },
     "relative_order" : 3,
     "source_on_save" : false,

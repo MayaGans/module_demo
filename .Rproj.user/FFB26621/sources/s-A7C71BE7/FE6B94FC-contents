@@ -1,9 +1,8 @@
 library(shiny)
-library(ggplot2)
+library(tidyverse)
+
 source("global.R")
-#####################
-# Module UI function
-######################
+
 ui <- 
   tagList(
     useShinyjs(),
@@ -29,21 +28,18 @@ ui <-
         title = "Charts",
           chartUI("my_chart")
       )
-      # tabPanel(
-      #   title = "Plots"
-      # )
     )
   )
 
 server <- function(input, output, session) {
   
   datafile <- callModule(dataUpload, "datafile", stringsAsFactors = FALSE)
-  my_chart <- callModule(chart, "my_chart", datafile = datafile())
-
   output$table <- renderTable({ datafile() })
+  
+  # HOW DO I UPDATE THE DATAFILE() WHENEVER A NEW FILE IS ADDED?
+  my_chart <- callModule(chart, "my_chart", datafile = datafile())
   output$plot <- renderPlot({ my_chart() })
-  
-  
+
 }
 
 shinyApp(ui, server)
