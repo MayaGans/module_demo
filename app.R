@@ -1,4 +1,5 @@
 library(shiny)
+library(shinyjs)
 library(tidyverse)
 
 source("global.R")
@@ -36,7 +37,7 @@ server <- function(input, output, session) {
   datafile <- callModule(dataUpload, "datafile", stringsAsFactors = FALSE)
   output$table <- renderTable({ datafile() })
   
-  # HOW DO I UPDATE THE DATAFILE() WHENEVER A NEW FILE IS ADDED?
+  # PASS datafile WITHOUT () INTO THE MODULE 
   my_chart <- callModule(chart, "my_chart", datafile = datafile)
   output$plot <- renderPlot({ my_chart() })
 
