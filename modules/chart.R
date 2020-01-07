@@ -1,13 +1,12 @@
 chart <- function(input, output, session, datafile = reactive(NULL)) {
   
   # SINCE DATAFILE IS A REACTIVE WE ADD THE PRERENTHESIS HERE
+  # WHERE/HOW CAN I ACCESS input$xaxis?
   output$XAXIS <- renderUI(selectInput("xaxis", "X Axis", choices = colnames(datafile())))
   output$YAXIS <- renderUI(selectInput("yaxis", "Y Axis", choices = colnames(datafile())))
-  
-  
+
   observe({
-    msg <- sprintf("File %s was uploaded", userFile()$name)
-    cat(msg, "\n")
+    msg <- sprintf(input$XAXIS)
   })
   
   # NOT WORKING
