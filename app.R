@@ -20,10 +20,10 @@ ui <-
     #   )
     # ),
     navbarPage(
-      "IDEA",
+      "TWO MODULES",
       tabPanel(
         title = "Data",
-          dataUploadUI("datafile", "User data (.csv format)")
+          dataUploadUI("datafile", "Import CSV")
       ),
       tabPanel(
         title = "Charts",

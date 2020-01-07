@@ -18,8 +18,6 @@ dataUpload <- function(input, output, session, stringsAsFactors) {
   # The user's data, parsed into a data frame
   dataframe <- reactive({
     read.csv(userFile()$datapath,
-             header = input$heading,
-             quote = input$quote,
              stringsAsFactors = stringsAsFactors)
   })
   
