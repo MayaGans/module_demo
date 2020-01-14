@@ -29,5 +29,4 @@ dataUpload <- function(input, output, session, stringsAsFactors) {
   
   # Return the reactive that yields the data frame
   return(dataframe)
-
 }

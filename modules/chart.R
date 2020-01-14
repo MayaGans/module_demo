@@ -1,6 +1,5 @@
 chart <- function(input, output, session, datafile = reactive(NULL)) {
   
-
   # In module UI, we usually use NS function to add the namespace in front of the output id. 
   # But in module server, the main server use callModule to the call the module server 
   # and the function will automatically add the namespace to all input and output id. 

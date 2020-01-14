@@ -1,5 +1,4 @@
 chartUI <- function(id, label = "Create Chart") {
-
   ns <- NS(id)
   tagList(
     sidebarPanel(
